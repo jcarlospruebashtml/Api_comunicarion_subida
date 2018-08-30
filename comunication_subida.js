@@ -1,7 +1,7 @@
  // JavaScript Document
 "use strict";
 
-var zonadatos,boton,el_nombre,el_apellido;
+var zonadatos,boton,el_nombre,el_apellido,datos;
 
 function inicio(){
 	zonadatos=document.getElementById("zonadatos");
@@ -12,7 +12,7 @@ function enviar_datos(){
 		el_nombre=document.getElementById("elnombre").value;
 		el_apellido=document.getElementById("elapellido").value;
 	
-			var datos=new FormData();
+			datos=new FormData();
 			datos.append("nombre",el_nombre);
 			datos.append("apellido",el_apellido);
 	
